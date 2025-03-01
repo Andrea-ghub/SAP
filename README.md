@@ -32,4 +32,5 @@ SAP rappresenta solo un esempio delle molte possibilità offerte dalle tecnologi
 * Modificate il file schools.json con i dati delle vostre scuole
 * aggiornate le dipendenze: **npm install**
   
-* per eseguire l'applicazione lanciate il comando: **node server.js**
+* per eseguire l'applicazione lanciate il comando: **npm run dev**
+* aprite il vostro browser : http://localhost:5173
