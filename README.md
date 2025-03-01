@@ -20,5 +20,14 @@ SAP rappresenta solo un esempio delle molte possibilità offerte dalle tecnologi
 
 * Server LoraWan Chirpstark https://www.chirpstack.io/
 * Algorand non-relay Node https://developer.algorand.org/
-* PHP Ver.7.0+ - Chart.js 1.4+ 
-* Sorgenti PHP e js disponibili
+
+
+**Requisiti**
+* Installare node.js e npm
+
+
+**Come usare l'applicazione**
+
+* Clonate il reposity con il comando  git clone https://github.com/algowifi/SAP
+* Modificate il file schools.json con i dati delle vostre scuole
+* per eseguire l'applicazione: node server.js
