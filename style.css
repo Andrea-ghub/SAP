@@ -1,8 +1,8 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif; /* Use Inter as the primary font */
   margin: 0;
   padding: 0;
-  background-color: #e6f7ff; /* Light blue background */
+  background-color: #f5f7fa; /* Lighter background */
   color: #333;
   display: flex;
   flex-direction: column;
@@ -12,47 +12,48 @@ body {
 }
 
 h1 {
-  color: #007bff; /* Blue */
-  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto for headings */
+  color: #2a9d8f; /* Teal color */
+  margin-bottom: 1rem; /* Reduced margin */
   text-align: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: none; /* Removed text-shadow */
 }
 
 p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 10px;
+  font-size: 1rem; /* Slightly smaller font size */
+  color: #4a4a4a; /* Darker gray */
+  margin-bottom: 0.5rem; /* Reduced margin */
   text-align: center;
 }
 
 .chart-container {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  width: 80%;
-  max-width: 800px;
+  padding: 1.5rem; /* Slightly smaller padding */
+  border-radius: 16px; /* Larger border radius */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 1.5rem; /* Reduced margin */
+  width: 90%; /* Increased width */
+  max-width: 960px; /* Increased max-width */
 }
 
 #schoolName {
-  font-size: 28px;
-  font-weight: bold;
-  color: #28a745; /* Green */
+  font-size: 2rem; /* Slightly smaller font size */
+  font-weight: 600; /* Inter font weight */
+  color: #2a9d8f; /* Teal color */
   text-align: center;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem; /* Reduced margin */
+  text-shadow: none; /* Removed text-shadow */
 }
 
 #aule {
-  font-size: 20px;
-  color: #dc3545; /* Red */
+  font-size: 1.5rem; /* Slightly smaller font size */
+  color: #e76f51; /* Orange color */
   text-align: center;
 }
 
 #data-ultima-lettura {
-  font-size: 16px;
-  color: #007bff; /* Blue */
+  font-size: 1rem; /* Slightly smaller font size */
+  color: #264653; /* Darker teal */
   text-align: center;
 }
 
@@ -60,34 +61,53 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem; /* Reduced margin */
+  width: 100%; /* Full width */
 }
 
 #address-input-container label {
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: #007bff;
+  font-size: 1.125rem; /* Slightly larger font size */
+  margin-bottom: 0.375rem; /* Reduced margin */
+  color: #2a9d8f; /* Teal color */
 }
 
-#address-input-container input {
-  padding: 10px;
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-bottom: 10px;
+#address-input-container select { /* Style the select element */
+  padding: 0.75rem; /* Slightly smaller padding */
+  width: 80%; /* Increased width */
+  max-width: 400px; /* Added max-width */
+  border: 2px solid #2a9d8f; /* Teal border */
+  border-radius: 8px; /* Larger border radius */
+  font-size: 1rem; /* Slightly smaller font size */
+  margin-bottom: 0.75rem; /* Reduced margin */
+  background-color: #fff;
+  color: #333;
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 #address-input-container button {
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 0.75rem 1.5rem; /* Slightly smaller padding */
+  background-color: #2a9d8f; /* Teal color */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px; /* Larger border radius */
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem; /* Slightly smaller font size */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition */
 }
 
 #address-input-container button:hover {
-  background-color: #0056b3;
+  background-color: #264653; /* Darker teal */
+}
+
+/* Add a custom dropdown arrow */
+#address-input-container select:after {
+  content: '\\25BC'; /* Downward-pointing triangle */
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none; /* Make it non-clickable */
+  color: #2a9d8f;
 }
