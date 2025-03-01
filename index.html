@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>S.A.P. - Scuola Aria Pulita</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="schoolName"></h1>
+  <p>Monitoraggio della Concentrazione di CO2 nelle Aule Scolastiche.</p>
+  <p id="aule"></p>
+  <p id="data-ultima-lettura"></p>
+  
+  <div id="address-input-container">
+    <label for="school-select">Seleziona Scuola:</label>
+    <select id="school-select">
+      <option value="">Seleziona una scuola</option>
+    </select>
+    <button id="fetch-data-button">Invio</button>
+  </div>
+
+  <div class="chart-container" style="position: relative; height:40vh; width:80vh; margin: 0 auto;">
+    <canvas id="myChart"></canvas>
+  </div>
+  <script type="module" src="./js/app.js"></script>
+  <script>
+    fetch('schools.json')
+      .then(response => response.json())
+      .then(schools => {
+        const select = document.getElementById('school-select');
+        schools.forEach(school => {
+          const option = document.createElement('option');
+          option.value = school.codice;
+          option.textContent = school["Nome Scuola"];
+          select.appendChild(option);
+        });
+      });
+  </script>
+</body>
+</html>
