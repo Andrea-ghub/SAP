@@ -53,8 +53,8 @@ p {
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
-  width: 40vh; /* Reduced width */
-  height: 40vh; /* Set a fixed height */
+  width: 60vh; /* Increased width */
+  height: 60vh; /* Increased height */
   position: absolute;
   top: 10px;
   right: 10px;
