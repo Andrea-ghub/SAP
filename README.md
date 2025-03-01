@@ -30,5 +30,6 @@ SAP rappresenta solo un esempio delle molte possibilità offerte dalle tecnologi
 
 * Clonate il reposity con il comando  git clone https://github.com/algowifi/SAP
 * Modificate il file schools.json con i dati delle vostre scuole
+* aggiornate le dipendenze: **npm install**
   
 * per eseguire l'applicazione lanciate il comando: **node server.js**

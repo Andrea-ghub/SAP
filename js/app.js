@@ -166,7 +166,7 @@ async function initialize(address) {
   }
   window.myChart = createChart(chartData);
 
-  const schoolName = loraJsonDati[0]?.name || 'S.A.P. - Scuola Aria Pulita';
+  const schoolName = loraJsonDati[0]?.name || ' ';
   document.getElementById('schoolName').innerText = schoolName;
   document.getElementById('aule').innerText = 'Numero di aule lette ' + (uniq.length);
 
