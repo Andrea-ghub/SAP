@@ -168,7 +168,7 @@ async function initialize(address) {
 
   const schoolName = loraJsonDati[0]?.name || 'S.A.P. - Scuola Aria Pulita';
   document.getElementById('schoolName').innerText = schoolName;
-  document.getElementById('aule').innerText = 'Numero di aule: ' + (uniq.length - 1);
+  document.getElementById('aule').innerText = 'Numero di aule lette ' + (uniq.length);
 
   // Extract and format the last transaction date
   if (transactions.length > 0) {
