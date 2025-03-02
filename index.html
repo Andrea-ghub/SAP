@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>S.A.P. - Scuola Aria Pulita</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.A.P. - Scuola Aria Pulita</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="header-container">
-    <div id="header-content">
+  <div id="dashboard-container">
+    <header id="header">
       <div id="logo-container">
         <svg width="100" height="50" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="100" height="50" fill="#2A9D8F"/>
           <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="white">SAP</text>
         </svg>
+        <span id="project-title">OpenIoT - Progetto Scuola Aria Pulita</span>
       </div>
       <h1 id="schoolName"></h1>
-    </div>
+    </header>
 
-    <div id="address-input-container">
-      <label for="school-select">Seleziona Scuola:</label>
-      <select id="school-select">
-        <option value="">Seleziona una scuola</option>
-      </select>
-      <button id="fetch-data-button">Invio</button>
-    </div>
+    <section id="input-section">
+      <div id="address-input-container">
+        <label for="school-select">Seleziona Scuola:</label>
+        <select id="school-select">
+          <option value="">Seleziona una scuola</option>
+        </select>
+        <button id="fetch-data-button">Invio</button>
+      </div>
+    </section>
 
-    <div class="chart-container">
-      <canvas id="myChart"></canvas>
-      <p id="aule"></p>
-      <p id="data-ultima-lettura"></p>
-    </div>
+    <section id="chart-section">
+      <div class="chart-container">
+        <canvas id="myChart"></canvas>
+        <div id="chart-info">
+          <p id="aule"></p>
+          <p id="data-ultima-lettura"></p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <p>&copy; 2024 Airlan S.r.l. - Assoprovider</p>
+    </footer>
   </div>
 
   <script type="module" src="./js/app.js"></script>
