@@ -96,6 +96,24 @@ body {
   background-color: #2980b9;
 }
 
+/* Explanation Section Styles */
+#explanation-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+#explanation-section h2 {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+#explanation-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
 /* Chart Section Styles */
 #chart-section {
   padding: 20px;
@@ -109,7 +127,7 @@ body {
   margin-bottom: 2rem;
   width: 100%;
   max-width: none; /* Remove max-width to fill the section */
-  height: 400px; /* Reduced height */
+  height: 300px; /* Reduced height */
   display: flex;
   flex-direction: column;
   align-items: center;
